@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'apercu';
+  src: url('fonts/apercu_medium_pro.otf') format('opentype');
+}
+
+body {
+  color: #222;
+  margin: 0 50px;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav {
+  margin: 30px 0 10px 0;
+  min-width: 840px;
+  max-width: 1030px;
+}
+
+.nav ul {
+  font-size: 14px;
+  font-family: 'apercu', Helvetica, sans-serif;
+  float: left;
+  list-style: none;
+  width: 200px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.content {
+  margin-right: 80px;
+  margin-top: 75px;
+  width: 800px;
+
+  font-size: 45px;
+  font-family: 'apercu', Helvetica, sans-serif;
+  letter-spacing: -1px;
+  font-weight: normal;
+  display: inline;
+}
+
+.links {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  transform: all .1s ease-in-out;
+}
+
+.links::before {
+  margin-right: 8px;
+  color: blue;
+}
+
+a {
+  pointer: cursor;
+}
+
+
