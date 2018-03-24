@@ -57,7 +57,6 @@ li {
   transform: all .1s ease-in-out;
   text-decoration: none;
 
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-transition-duration: 0.1s;
