@@ -3,6 +3,11 @@
   src: url('fonts/apercu_medium_pro.otf') format('opentype');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0 50px;
   display: block;
@@ -24,12 +29,6 @@ body {
   width: 200px;
   list-style-type: disc;
   display: block;
-
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
 }
 
 li {
@@ -45,6 +44,7 @@ li {
   width: 800px;
 
   font-size: 45px;
+  font-weight: 400px;
   font-family: 'apercu', Helvetica, sans-serif;
   letter-spacing: -1px;
   font-weight: normal;
@@ -55,9 +55,7 @@ li {
   text-decoration: none;
   color: black;
   transform: all .1s ease-in-out;
-  cursor: pointer;
   text-decoration: none;
-  color: black;
 
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -70,9 +68,14 @@ li {
   transition-property: transform;
 }
 
-.links:hover, .links:focus, .links:active {
+#nav a:visited {
+  color: black;
+}
+
+#nav a:hover, a:focus, a:active {
   /* -webkit-transform: skew(-10deg);
   transform: skew(-10deg); */
+  color: blue;
   -webkit-transform: translateX(8px);
   transform: translateX(8px);
 }
@@ -81,10 +84,6 @@ li {
   content: '\2716';
   margin-right: 8px;
   color: blue;
-}
-
-a:visited {
-  color: black;
 }
 
 #content a:link {
