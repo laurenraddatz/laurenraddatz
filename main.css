@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Apercu';
-  src: url('fonts/apercu_regular_pro.otf') format('opentype');
+  font-family: "Apercu";
+  src: url("fonts/apercu_regular_pro.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Apercu-med';
-  src: url('fonts/apercu_medium_pro.otf') format('opentype');
+  font-family: "Apercu-med";
+  src: url("fonts/apercu_medium_pro.otf") format("opentype");
 }
 
 * {
@@ -17,7 +17,7 @@
   background: #f5e3e7;
 }
 
-body {
+#main {
   margin: 0 50px;
   display: block;
   background: none;
@@ -36,7 +36,7 @@ body {
   float: left;
 
   font-size: 14px;
-  font-family: 'Apercu-med', Helvetica, sans-serif;
+  font-family: "Apercu-med", Helvetica, sans-serif;
 }
 
 li {
@@ -51,7 +51,7 @@ li {
   margin: 75px 80px 0 0;
 
   font-size: 44px;
-  font-family: 'Apercu', Helvetica, sans-serif;
+  font-family: "Apercu", Helvetica, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -59,7 +59,7 @@ li {
   display: inline-block;
   text-decoration: none;
   color: black;
-  transform: all .1s ease-in-out;
+  transform: all 0.1s ease-in-out;
   text-decoration: none;
 
   -webkit-transform: perspective(1px) translateZ(0);
@@ -76,21 +76,23 @@ li {
   color: black;
 }
 
-#nav a:hover, a:focus, a:active {
+#nav a:hover,
+a:focus,
+a:active {
   color: blue;
   -webkit-transform: translateX(8px);
   transform: translateX(8px);
 }
 
 #nav .links::before {
-  content: '\2716';
+  content: "\2716";
   margin-right: 8px;
   color: blue;
 }
 
 #content a:link {
   color: blue;
-  padding: 0 .2em;
+  padding: 0 0.2em;
   margin: 0 -5px;
   text-decoration: none;
 }
