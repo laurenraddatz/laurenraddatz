@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Apercu";
-  src: url("fonts/apercu_regular_pro.otf") format("opentype");
+  font-family: 'Apercu';
+  src: url('fonts/apercu_regular_pro.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "Apercu-med";
-  src: url("fonts/apercu_medium_pro.otf") format("opentype");
+  font-family: 'Apercu-med';
+  src: url('fonts/apercu_medium_pro.otf') format('opentype');
 }
 
 * {
@@ -36,12 +36,11 @@
   float: left;
 
   font-size: 14px;
-  font-family: "Apercu-med", Helvetica, sans-serif;
+  font-family: 'Apercu-med', Helvetica, sans-serif;
 }
 
 li {
   display: list-item;
-  text-align: -webkit-match-parent;
   list-style: none;
 }
 
@@ -51,7 +50,7 @@ li {
   margin: 75px 80px 0 0;
 
   font-size: 44px;
-  font-family: "Apercu", Helvetica, sans-serif;
+  font-family: 'Apercu', Helvetica, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -59,13 +58,13 @@ li {
   display: inline-block;
   text-decoration: none;
   color: black;
-  transform: all 0.1s ease-in-out;
+  transform: all 200ms ease-in-out;
   text-decoration: none;
 
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: transform;
@@ -85,18 +84,40 @@ a:active {
 }
 
 #nav .links::before {
-  content: "\2716";
+  content: '\2716';
   margin-right: 8px;
   color: blue;
 }
 
-#content a:link {
-  color: blue;
+#content ul {
+  margin-top: 16px;
+}
+
+#content li {
+  margin-bottom: -0.75rem;
+}
+
+#content li::before {
+  content: '\2192';
+  margin-right: 8px;
+  color: black;
+  font-size: 36px;
+}
+
+#content a {
   padding: 0 0.2em;
   margin: 0 -5px;
+  color: black;
   text-decoration: none;
+  font-size: 36px;
+  transition: color 150ms linear !important;
+  -webkit-transition: color 150ms linear !important;
+}
+
+#content a:hover, a:active, a:focus {
+  color: blue !important;
 }
 
 #content a:visited {
-  color: blue;
+  color: black;
 }
