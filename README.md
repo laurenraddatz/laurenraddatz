@@ -1,2 +1,1 @@
-# laurenraddatz
-my personal website, laurenraddatz.com
+my personal website, https://laurenraddatz.com
