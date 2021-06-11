@@ -17,111 +17,12 @@
   background: #f5e3e7;
 }
 
-#main {
-  margin: 0 50px;
-  display: block;
-  background: none;
-  -webkit-font-smoothing: antialiased;
-}
-
-#nav {
-  margin: 30px 0 10px 0;
-  min-width: 840px;
-  max-width: 1030px;
-}
-
-#nav ul {
-  display: block;
-  width: 200px;
-  float: left;
-
-  font-size: 14px;
-  font-family: 'Apercu-med', Helvetica, sans-serif;
-}
-
-li {
-  display: list-item;
-  list-style: none;
-}
-
-#content {
-  margin-top: 80px;
+body {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 48px;
   font-size: 36px;
-  font-family: 'Apercu', Helvetica, sans-serif;
-  letter-spacing: -1px;
-}
-
-#lol {
-  font-style: italic;
-  margin-bottom: 20px;;
-}
-
-#content ul {
-  margin-top: 20px;
-}
-
-.links a:link {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  transform: all 150ms ease-in-out;
-  text-decoration: none;
-
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-#nav a:visited {
-  color: black;
-}
-
-#nav a:hover,
-a:focus,
-a:active {
-  color: blue;
-  -webkit-transform: translateX(8px);
-  transform: translateX(8px);
-}
-
-#nav .links::before {
-  content: '\2716';
-  margin-right: 8px;
-  color: blue;
-}
-
-#content li {
-  margin-bottom: -0.75rem;
-}
-
-#content li::before {
-  content: '\2192';
-  margin-right: 8px;
-  color: black;
-  font-size: 36px;
-}
-
-#content a {
-  padding: 0 0.2em;
-  margin: 0 -5px;
-  color: black;
-  text-decoration: none;
-  font-size: 36px;
-  transition: color 150ms linear !important;
-  -webkit-transition: color 150ms linear !important;
-}
-
-#content a:hover, a:active, a:focus {
-  color: blue !important;
-}
-
-#content a:visited {
-  color: black;
+  font-family: sans-serif;
 }
