@@ -1,20 +1,6 @@
-@font-face {
-  font-family: 'Apercu';
-  src: url('public/fonts/apercu_regular_pro.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Apercu-med';
-  src: url('public/fonts/apercu_medium_pro.otf') format('opentype');
-}
-
 * {
   margin: 0;
   padding: 0;
-}
-
-::selection {
-  background: #f5e3e7;
 }
 
 body {
@@ -22,7 +8,16 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin: 48px;
   font-size: 36px;
   font-family: sans-serif;
+
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  
+  width: 80%;
 }
